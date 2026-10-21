@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple responsive interactive counter application." />
+  <title>Interactive Counter</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <section class="counter-card" aria-labelledby="page-title">
+      <div class="icon-circle" aria-hidden="true">↕</div>
+
+      <p class="eyebrow">SIMPLE TOOL</p>
+      <h1 id="page-title">Interactive Counter</h1>
+      <p class="subtitle">Keep track of your count with ease.</p>
+
+      <div
+        class="counter-display"
+        id="counter"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      >0</div>
+
+      <p class="counter-label">CURRENT COUNT</p>
+
+      <div class="button-group">
+        <button id="decrease" class="btn btn-secondary"
+          type="button" aria-label="Decrease count" disabled>
+          − <span>Decrease</span>
+        </button>
+
+        <button id="increase" class="btn btn-primary"
+          type="button" aria-label="Increase count">
+          + <span>Increase</span>
+        </button>
+      </div>
+
+      <button id="reset" class="btn btn-reset" type="button">
+        ↻ Reset Counter
+      </button>
+
+      <p class="footer-note">Your counter always starts at zero.</p>
+    </section>
+  </main>
+</body>
+</html>
