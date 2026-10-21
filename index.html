@@ -1,21 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="A simple responsive interactive counter application." />
+  <meta
+    name="description"
+    content="A clean, responsive interactive counter application."
+  />
+
   <title>Interactive Counter</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <main class="container">
     <section class="counter-card" aria-labelledby="page-title">
+
       <div class="icon-circle" aria-hidden="true">↕</div>
 
       <p class="eyebrow">SIMPLE TOOL</p>
+
       <h1 id="page-title">Interactive Counter</h1>
-      <p class="subtitle">Keep track of your count with ease.</p>
+
+      <p class="subtitle">
+        Keep track of your count with ease.
+      </p>
 
       <div
         class="counter-display"
@@ -28,13 +48,22 @@
       <p class="counter-label">CURRENT COUNT</p>
 
       <div class="button-group">
-        <button id="decrease" class="btn btn-secondary"
-          type="button" aria-label="Decrease count" disabled>
+        <button
+          id="decrease"
+          class="btn btn-secondary"
+          type="button"
+          aria-label="Decrease count"
+          disabled
+        >
           − <span>Decrease</span>
         </button>
 
-        <button id="increase" class="btn btn-primary"
-          type="button" aria-label="Increase count">
+        <button
+          id="increase"
+          class="btn btn-primary"
+          type="button"
+          aria-label="Increase count"
+        >
           + <span>Increase</span>
         </button>
       </div>
@@ -43,7 +72,10 @@
         ↻ Reset Counter
       </button>
 
-      <p class="footer-note">Your counter always starts at zero.</p>
+      <p class="footer-note">
+        Your counter always starts at zero.
+      </p>
+
     </section>
   </main>
 </body>

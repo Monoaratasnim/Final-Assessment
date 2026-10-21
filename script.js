@@ -9,7 +9,7 @@ let count = 0;
 function updateCounter() {
   counterDisplay.textContent = count;
 
-  // Prevent the counter from going below zero.
+  // Disable decrease when the count reaches zero.
   decreaseButton.disabled = count === 0;
 }
 
@@ -30,5 +30,5 @@ resetButton.addEventListener("click", function () {
   updateCounter();
 });
 
-// Set the initial UI state.
+// Initialize the counter and button states.
 updateCounter();
